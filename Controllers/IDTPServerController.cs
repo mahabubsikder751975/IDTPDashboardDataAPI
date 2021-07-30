@@ -52,8 +52,7 @@ namespace IDTPDashboardDataAPI.Controllers
                     }
             } 
 
-            int index = rng.Next(servers.Count);
-           // servers.Find(x => (x.ServerRackId == 3) && (x.RackId==1)).ServerHeartbeat=false;
+            int index = rng.Next(servers.Count);           
             servers.ToArray()[index].ServerHeartbeat=false;
             
             return servers;
